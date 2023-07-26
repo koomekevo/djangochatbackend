@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'djangochatbackend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangochatbackendappdb',     # Replace 'your_database_name' with the name of your PostgreSQL database
+        'USER': 'koomekevo', # Replace 'your_postgres_username' with your PostgreSQL username
+        'PASSWORD': 'cookernoma', # Replace 'your_postgres_password' with your PostgreSQL password
+        'HOST': 'localhost',              # Replace 'localhost' with your PostgreSQL host. Use 'localhost' if running locally.
+        'PORT': '5432',                   # Replace '5432' with your PostgreSQL port. The default port is 5432.
     }
 }
 
